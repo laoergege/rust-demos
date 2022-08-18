@@ -1,9 +1,13 @@
 [workspace]
 
 members = [
-    "my-app",
-    "variables",
     "flow",
-    "data-type",
-    "scrape-url"
+    "scrape-url",
+    "mod-demo",
+    "safe",
+    "hello-rust",
+    "variables",
+    "struct-enum",
+    "use-func",
+    "data-struct"
 ]
