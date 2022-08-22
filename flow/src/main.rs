@@ -2,13 +2,9 @@
 #[allow(unused_variables)]
 #[warn(unused_doc_comments)]
 
-/**
- * 在 rust 中，一切皆表达式
- */
 fn main() {
-    greet_world();
-
     if_else();
+    loop_while_for();
 }
 
 fn if_else() {
@@ -28,17 +24,16 @@ fn if_else() {
 
 /**
  * 循环：`loop / while(条件) / for...in(迭代器)` + `break / continue`
- * for...in(迭代器) 循环实际上只是一个语法糖，编译器会将其展开使用 loop 循环对迭代器进行循环访问，直至返回 None
  *
  * 匹配： `match expr {}`、`if let / while let`
  */
-fn greet_world() {
+fn loop_while_for() {
     let southern_germany = "Grüß Gott!";
     let chinese = "世界，你好";
     let english = "World, hello";
     let regions = [southern_germany, chinese, english];
 
-    // loop
+    // loop：无限循环
     println!("loop:");
     let mut i = 0;
     loop {
@@ -57,7 +52,8 @@ fn greet_world() {
         i += 1;
     }
 
-    // for 迭代器
+    // for：集合迭代
+    // for...in(迭代器) 循环实际上只是一个语法糖，编译器会将其展开使用 loop 循环对迭代器进行循环访问，直至返回 None
     println!("for...in");
     for region in regions {
         println!("{}", region);

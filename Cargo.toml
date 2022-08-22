@@ -9,5 +9,7 @@ members = [
     "variables",
     "struct-enum",
     "use-func",
-    "data-struct"
+    "data-struct",
+    "error",
+    "memory"
 ]
